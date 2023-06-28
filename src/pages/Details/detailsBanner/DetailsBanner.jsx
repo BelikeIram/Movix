@@ -19,6 +19,7 @@ const DetailsBanner = ({video, crew}) => {
     const { data, loading } = useFetch(`/${mediaType}/${id}`);
 
     const {url} = useSelector((state)=>state.home)
+    
     const toHoursAndMinutes = (totalMinutes) => {
         const hours = Math.floor(totalMinutes / 60);
         const minutes = totalMinutes % 60;
